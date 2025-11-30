@@ -1,0 +1,13 @@
+{
+    "editor.smoothScrolling": true ,
+    "terminal.integrated.smoothScrolling": true,
+    "editor.mouseWheelZoom": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.tree.indent": 18,
+    "workbench.list.smoothScrolling": true,
+    
+
+
+    
+}
