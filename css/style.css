@@ -1,0 +1,85 @@
+:root{
+    --primary-color: #31261A;
+    --primary-color-second: #FAF4EA;
+    --color-of-brand: #819B57 ;
+    --color-of-brand-second: #465929;
+}
+/* Base */
+body {
+color: var(--primary-color);
+}
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+/* .section-title {
+    color: var(--primary-color);
+} */
+
+
+/* Nav */
+.nav-bar-anchors a {
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+    color: var(--primary-color-second);
+}
+.nav-bar-anchors:hover a {
+    list-style-type: none;
+    color: var(--color-of-brand);
+    cursor: pointer;
+    
+}
+/* Buttons */
+.button {
+    background-color: var(--color-of-brand);
+    color: var(--primary-color-second);
+    border-radius: 8px;
+    width: 238px;
+    height: 59px;
+    cursor: pointer;
+}
+.button:hover {
+    color: var(--color-of-brand-second);
+    background-color: transparent;
+    border-color: var(--color-of-brand-second);
+    cursor: pointer;
+}
+
+/* Advantages section */
+.advantages-list {
+    background-color: var(--color-of-brand);
+    color: var(--primary-color-second);
+}   /* It's working just uncomment after whole "Website Layout" */
+
+/* Formats section */
+.formats-section-cards{
+    color: var(--primary-color-second);
+}
+
+/* Accent colors */
+.accent{
+    color: var(--color-of-brand-second);
+}
+
+.accent:last-child {
+    color: #A18268;
+}
+
+
+
+
+
+
+
+
+
+
+/* .general-information{
+    background-image: main-section-background;
+}    Attempt to set the background foto with CSS (NOT working)  */
+
+
+
+
+
