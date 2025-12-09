@@ -1,20 +1,60 @@
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: 300;
+    src: url('../fonts/poppins-v24-latin-300.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: 400;
+    src: url('../fonts/poppins-v24-latin-regular.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: 600;
+    src: url('../fonts/poppins-v24-latin-600.woff2') format('woff2');
+}
+
+
+@font-face {
+    font-display: swap;
+    font-family: 'Poppins';
+    font-weight: 900;
+    src: url('../fonts/poppins-v24-latin-900.woff2') format('woff2');
+}
+
 :root{
     --primary-color: #31261A;
     --primary-color-second: #FAF4EA;
     --color-of-brand: #819B57 ;
     --color-of-brand-second: #465929;
 }
+
 /* Base */
 body {
-color: var(--primary-color);
+    font-family: 'Poppins',sans-serif;
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: gray;
+}
+
+address {
+    font-style: normal;
+
 }
 ul {
     list-style-type: none;
     padding: 0px;
 }
-/* .section-title {
-    color: var(--primary-color);
-} */
 
 
 /* Nav */
@@ -23,13 +63,17 @@ ul {
     text-decoration: none;
     outline: none;
     color: var(--primary-color-second);
+    font-weight: 400;
+    font-size: 18px;
 }
 .nav-bar-anchors:hover a {
     list-style-type: none;
     color: var(--color-of-brand);
     cursor: pointer;
-    
+    font-weight: 900;
+    font-size: 18px;
 }
+
 /* Buttons */
 .button {
     background-color: var(--color-of-brand);
@@ -38,32 +82,89 @@ ul {
     width: 238px;
     height: 59px;
     cursor: pointer;
+    font-weight: 400;
 }
 .button:hover {
     color: var(--color-of-brand-second);
     background-color: transparent;
     border-color: var(--color-of-brand-second);
     cursor: pointer;
+    font-weight: 600;
 }
 
-/* Advantages section */
+
+/* Hero section / General information section */
+.hero-title {
+    text-align: center;
+    color: var(--primary-color-second);
+    font-size: 128px;
+    font-weight: 900;
+}
+
+/* Advantages list */
 .advantages-list {
     background-color: var(--color-of-brand);
     color: var(--primary-color-second);
-}   /* It's working just uncomment after whole "Website Layout" */
+    
+}   
+.advantages-items {
+    font-size: 20px;
+    font-weight: 300 ;
+}
+
+/* Traditions section */
+.tradisions-text span {
+    text-transform: uppercase;
+}
+
+/* Chefs section */
+.section-title-chefs {
+    font-size: 40px;
+    font-weight: 600;
+}
 
 /* Formats section */
 .formats-section-cards{
     color: var(--primary-color-second);
 }
-
-/* Accent colors */
-.accent{
-    color: var(--color-of-brand-second);
+.section-title {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 1,3;
 }
 
-.accent:last-child {
+.formats-section-cards-title {
+    font-weight: 600;
+    font-size: 24px;
+}
+.formats-section-cards-text {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/* Footer */
+
+.address-link a {
+    color: var(--primary-color-second);
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    
+}
+.address-link:hover a{  
+    color: var(--color-of-brand);
+    cursor: pointer;
+}
+
+/* Accent colors */
+.accent {
+    color: var(--color-of-brand-second);
+}
+/* Copy-right sign */
+footer .accent:last-child {
     color: #A18268;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 
