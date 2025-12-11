@@ -46,16 +46,27 @@ body {
     line-height: 1.5;
     background-color: gray;
 }
-
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
 address {
     font-style: normal;
 
 }
 ul {
     list-style-type: none;
-    padding: 0px;
+    margin-top: 0;
 }
-
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.section {
+    padding: 48px 0;
+}
 
 /* Nav */
 .nav-bar-anchors a {
@@ -93,7 +104,11 @@ ul {
 }
 
 
-/* Hero section / General information section */
+/* Hero section */
+.hero-section{
+    padding: 272px 0;
+
+}
 .hero-title {
     text-align: center;
     color: var(--primary-color-second);
@@ -101,21 +116,32 @@ ul {
     font-weight: 900;
 }
 
-/* Advantages list */
+/* section-advantages */
+
+.section-advantages{
+    padding: 0 0 48px 0;
+    margin-top: 0;
+}
 .advantages-list {
     background-color: var(--color-of-brand);
     color: var(--primary-color-second);
+    padding-top: 0;
+    
     
 }   
 .advantages-items {
     font-size: 20px;
     font-weight: 300 ;
+    display: inline;
+    margin: 200px 20px;
 }
 
 /* Traditions section */
 .tradisions-text span {
     text-transform: uppercase;
 }
+
+
 
 /* Chefs section */
 .section-title-chefs {
