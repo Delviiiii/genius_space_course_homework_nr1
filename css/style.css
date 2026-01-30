@@ -33,6 +33,8 @@
 :root{
     --primary-color: #31261A;
     --primary-color-second: #FAF4EA;
+    --secondary-color-dark: #A18268;
+    --secondary-color-light: #CFCFBC;
     --color-of-brand: #819B57 ;
     --color-of-brand-second: #465929;
 }   
@@ -47,7 +49,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
-    background-color: gray;
+    background-color: var(--primary-color-second);
     margin: 0;
 }
 h1, h2, h3, h4, h5, h6, p {
@@ -77,6 +79,9 @@ ul {
     font-weight: 900;
     font-size: 64px;
     line-height: 1.3;
+}
+.section-titles.centered {
+    text-align: center;
 }
 .container {
     width: 100%;
@@ -145,7 +150,11 @@ ul {
 /* Hero section */
 .hero-section{
     padding: 272px 0;
-
+    background-image: url('../images/background-image-hero-section.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    
 }
 .hero-title {
     text-align: center;
@@ -212,14 +221,40 @@ ul {
 }
 
 /* Chefs section */
+
+.chef-photo {
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0 0 var(--primary-color-second), -16px 16px 0 1px  var(--secondary-color-dark);
+} 
 .chefs-section-title {
-    margin: 96px 0 80px 0;
+    margin: 96px auto 80px;
+    max-width: 520px;
 }
+
 .section-title-chef {
     font-size: 40px;
     font-weight: 600;
     margin: 0 0 16px 0;
 }
+.chefs-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chefs-list-item {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.chef-list-item-text {
+    
+    max-width: 334px;
+}
+.chefs-list-item {
+    display: flex;
+    gap: 30px;
+}
+
 
 /* Formats section */
 .formats-list{
@@ -244,16 +279,43 @@ ul {
 .format-card-title {
     font-weight: 600;
     font-size: 24px;
+    
 }
 .formats-section-cards-text {
-    height: ;
+    
     font-weight: 300;
     font-size: 14px;
 }
+/* Carousel */
+.carousel-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    padding: 0;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    fill: var(--primary-color);
+}
+
+.carousel-button:hover{
+    background-color: var(--primary-color) ;
+    fill: var(--primary-color-second);
+}
+
 
 
 /* Footer */
-
+.footer {
+    background-color: var(--primary-color);
+    background-image: url('../images/footer-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .address-link a {
     color: var(--primary-color-second);
     font-weight: 300;
@@ -265,7 +327,12 @@ ul {
     color: var(--color-of-brand);
     cursor: pointer;
 }
-
+.address-icons {
+    fill: var(--primary-color-second);
+}
+.address-icons:hover {
+    fill: var(--color-of-brand);
+}
 /* Accent colors */
 .accent {
     color: var(--color-of-brand-second);

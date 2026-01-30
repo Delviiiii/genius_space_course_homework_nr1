@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
@@ -74,73 +74,89 @@
 
       <section class="section" id="chefs">
         <div class="container">
-          <h2 class="chefs-section-title section-titles">
+          <h2 class="chefs-section-title section-titles centered">
             Наші найкращі
             <span class="accent">шеф -кухарі</span>
           </h2>
-          <ul>
-            <li>
-              <article>
-                <!-- foto nasti -->
-                <h3 class="section-title-chef">Настя</h3>
-                <p>Привіт, я Настя!</p>
-                <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
-                <p>Я випічу для вас найсмачніщі вироби!</p>
+
+          <ul class="chefs-list">
+            <li class="chefs-item">
+              <article class="chefs-list-item">
+                <img class="chef-photo" src="images/nastia.jpg" alt="Nastia chef" />
+                <div class="chef-list-item-text">
+                  <h3 class="section-title-chef">Настя</h3>
+                  <p>Привіт, я Настя!</p>
+                  <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
+                  <p>Я випічу для вас найсмачніщі вироби!</p>
+                </div>
               </article>
             </li>
-            <li>
-              <article>
-                <h3 class="section-title-chef">Влад</h3>
-                <p>Привіт, я Влад!</p>
-                <p>
-                  Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз з Вами
-                  через нашу випічку!
-                </p>
-                <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+            <li class="chefs-item">
+              <article class="chefs-list-item">
+                <img class="chef-photo" src="images/Vlad.jpg" alt="Vlad chef" />
+                <div class="chef-list-item-text">
+                  <h3 class="section-title-chef">Влад</h3>
+                  <p>Привіт, я Влад!</p>
+                  <p>
+                    Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз з Вами
+                    через нашу випічку!
+                  </p>
+                  <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                </div>
               </article>
             </li>
           </ul>
         </div>
       </section>
-
+      <!--  -->
       <section class="section" id="formats">
         <div class="container">
           <h2 class="section-titles">Формати</h2>
+          <button class="carousel-button" type="button">
+            <svg width="16" height="16">
+              <use href="./images/icons.svg#icon-Arrow"></use>
+            </svg>
+          </button>
           <ul class="formats-list">
-              <li class="format-item">
-                <article class="format-card">
-                  <h3 class="format-card-title">Walrus</h3>
-                  <div class="formats-section-cards-text">
-                    <p>Площа: до 120 м2</p>
-                    <p>Меню: розширене меню</p>
-                    <p>Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби</p>
-                    <p>Посадкові місця: є</p>
-                  </div>
-                </article>
-              </li>
-              <li class="format-item">
-                <article class="format-card">
-                  <h3 class="format-card-title">Horseshoe</h3>
-                  <div class="formats-section-cards-text">
-                    <p>Площа: до 25 м2</p>
-                    <p>Меню: найпопулярніші позиції меню</p>
-                    <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
-                    <p>Посадкові місця: відсутні</p>
-                  </div>
-                </article>
-              </li>
-              <li class="format-item">
-                <article class="format-card">
-                  <h3 class="format-card-title">Handlebar</h3>
-                  <div class="formats-section-cards-text">
-                    <p>Площа: до 15 м2</p>
-                    <p>Меню: найпопулярніші позиції меню</p>
-                    <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
-                    <p>Посадкові місця: відсутні</p>
-                  </div>
-                </article>
-              </li>
-            </ul>
+            <li class="format-item">
+              <article class="format-card">
+                <h3 class="format-card-title">Walrus</h3>
+                <div class="formats-section-cards-text">
+                  <p>Площа: до 120 м2</p>
+                  <p>Меню: розширене меню</p>
+                  <p>Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби</p>
+                  <p>Посадкові місця: є</p>
+                </div>
+              </article>
+            </li>
+            <li class="format-item">
+              <article class="format-card">
+                <h3 class="format-card-title">Horseshoe</h3>
+                <div class="formats-section-cards-text">
+                  <p>Площа: до 25 м2</p>
+                  <p>Меню: найпопулярніші позиції меню</p>
+                  <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
+                  <p>Посадкові місця: відсутні</p>
+                </div>
+              </article>
+            </li>
+            <li class="format-item">
+              <article class="format-card">
+                <h3 class="format-card-title">Handlebar</h3>
+                <div class="formats-section-cards-text">
+                  <p>Площа: до 15 м2</p>
+                  <p>Меню: найпопулярніші позиції меню</p>
+                  <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
+                  <p>Посадкові місця: відсутні</p>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <button class="carousel-button" type="button">
+            <svg width="16" height="16">
+              <use href="./images/icons.svg#icon-Arrow"></use>
+            </svg>
+          </button>
         </div>
       </section>
 
@@ -164,7 +180,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <div class="container">
         <nav>
           <a href="/"><img src="./images/logo.svg" alt="Сучасна пекарня logo" /></a>
@@ -193,12 +209,16 @@
             </li>
             <li>
               <a href="#" target="_blank">
-                <img src="images/facebook_black_logo_icon_147136 1.svg" alt="facebook_black_logo_icon" />
+                <svg class="address-icons" width="32" height="32">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
               </a>
             </li>
             <li>
               <a href="#" target="_blank">
-                <img src="images/instagram_black_logo_icon_147122 1.svg" alt="instagram_black_logo_icon" />
+                <svg class="address-icons" width="32px" height="32px">
+                  <use href="images/icons.svg#icon-instagram"></use>
+                </svg>
               </a>
             </li>
           </ul>
