@@ -252,12 +252,10 @@ ul {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    
+    gap: 40px 30px;
 }
 .chef-item {
-    flex-basis: calc(100% - 30px / 2);
-    gap: 40px 30px;
-
+    flex-basis: calc((100% - 30px) / 2);
 }
 .chef-card {
     display: flex;
